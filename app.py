@@ -3,6 +3,7 @@
 #
 # Added template for page rendering
 # Refer to static files in a template
+# Serve a static file from code
 
 from flask import Flask
 from flask import render_template
@@ -12,7 +13,7 @@ import re
 app = Flask(__name__)
 @app.route("/")
 def home():
-    return "Hello Flask"
+    return "Flask Tutorial in Visual Studio Code"
 
 @app.route("/hello/<name>")
 def hello_there(name=None):
@@ -21,3 +22,7 @@ def hello_there(name=None):
          name=name,
          date=datetime.now()
      )
+
+@app.route("/api/data")
+def get_data():
+    return app.send_static_file("data.json")
