@@ -1,3 +1,5 @@
 *~
 *.[oa]
 vsc_flask_env/
+__pycache__/
+*.pyc

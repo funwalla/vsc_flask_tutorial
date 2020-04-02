@@ -11,9 +11,18 @@ from datetime import datetime
 import re
 
 app = Flask(__name__)
+
 @app.route("/")
 def home():
-    return "Flask Tutorial in Visual Studio Code"
+    return render_template("home.html")
+
+@app.route("/about/")
+def about():
+    return render_template("about.html")
+
+@app.route("/contact/")
+def contact():
+    return render_template("content.html")
 
 @app.route("/hello/<name>")
 def hello_there(name=None):
