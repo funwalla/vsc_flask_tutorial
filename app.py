@@ -1,6 +1,7 @@
 # VS Code Flask Tutorials
-# Use a template to render a page
-# https://code.visualstudio.com/docs/python/tutorial-flask#_use-a-template-to-render-a-page
+# https://code.visualstudio.com/docs/python/tutorial-flask
+#
+# Added template for page rendering
 
 from flask import Flask
 from flask import render_template
