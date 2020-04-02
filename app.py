@@ -2,6 +2,7 @@
 # https://code.visualstudio.com/docs/python/tutorial-flask
 #
 # Added template for page rendering
+# Refer to static files in a template
 
 from flask import Flask
 from flask import render_template
