@@ -1,9 +1,9 @@
 # VS Code Flask Tutorials
 # https://code.visualstudio.com/docs/python/tutorial-flask
 #
-# Added template for page rendering
-# Refer to static files in a template
-# Serve a static file from code
+# This application creates a 3 page website using the
+# Flask framework with "home", "about", and "contact" page 
+# templates that extend a base template.
 
 from flask import Flask
 from flask import render_template
