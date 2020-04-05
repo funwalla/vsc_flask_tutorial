@@ -1,16 +1,7 @@
-# VS Code Flask Tutorials
-# https://code.visualstudio.com/docs/python/tutorial-flask
-#
-# This application creates a 3 page website using the
-# Flask framework with "home", "about", and "contact" page 
-# templates that extend a base template.
-
-from flask import Flask
-from flask import render_template
 from datetime import datetime
-import re
+from flask import Flask, render_template
+from . import app
 
-app = Flask(__name__)
 
 @app.route("/")
 def home():
@@ -22,7 +13,7 @@ def about():
 
 @app.route("/contact/")
 def contact():
-    return render_template("content.html")
+    return render_template("contact.html")
 
 @app.route("/hello/<name>")
 def hello_there(name=None):
